@@ -27204,12 +27204,6 @@ const Photos = ()=>{
     const handlePhotoClick = (photo)=>{
         setSelectedPhoto(photo);
     };
-    const handleRecent = ()=>{
-        console.log("ddddd");
-    };
-    const handleFavorite = ()=>{
-        console.log("faaaa");
-    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         style: {
             backgroundColor: "#fdfdfc"
@@ -27222,7 +27216,7 @@ const Photos = ()=>{
                 children: "Photos"
             }, void 0, false, {
                 fileName: "src/Components/Photos.js",
-                lineNumber: 33,
+                lineNumber: 27,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27241,6 +27235,7 @@ const Photos = ()=>{
                             width: "700px"
                         },
                         onChange: (event, newValue)=>{
+                            console.log(event, newValue);
                             setValue(newValue);
                         },
                         children: [
@@ -27251,33 +27246,32 @@ const Photos = ()=>{
                                 label: "Recently Added"
                             }, void 0, false, {
                                 fileName: "src/Components/Photos.js",
-                                lineNumber: 45,
+                                lineNumber: 40,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _tabDefault.default), {
                                 label: " Favorited"
                             }, void 0, false, {
                                 fileName: "src/Components/Photos.js",
-                                lineNumber: 46,
+                                lineNumber: 41,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Photos.js",
-                        lineNumber: 36,
+                        lineNumber: 30,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/Components/Photos.js",
-                    lineNumber: 35,
+                    lineNumber: 29,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Photos.js",
-                lineNumber: 34,
+                lineNumber: 28,
                 columnNumber: 7
             }, undefined),
-            console.log(value),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 style: {
                     display: "flex",
@@ -27307,24 +27301,25 @@ const Photos = ()=>{
                                         }
                                     }, void 0, false, {
                                         fileName: "src/Components/Photos.js",
-                                        lineNumber: 64,
+                                        lineNumber: 52,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                         style: {
                                             fontFamily: "Roboto",
-                                            fontSize: "10px"
+                                            fontSize: "15px",
+                                            fontWeight: "bold"
                                         },
                                         children: photo.filename
                                     }, void 0, false, {
                                         fileName: "src/Components/Photos.js",
-                                        lineNumber: 71,
+                                        lineNumber: 59,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                         style: {
                                             fontFamily: "Roboto",
-                                            fontSize: "10px"
+                                            fontSize: "15px"
                                         },
                                         children: [
                                             (photo.sizeInBytes / 1000000).toFixed(2),
@@ -27332,18 +27327,18 @@ const Photos = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/Photos.js",
-                                        lineNumber: 72,
+                                        lineNumber: 60,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, photo.filename, true, {
                                 fileName: "src/Components/Photos.js",
-                                lineNumber: 60,
+                                lineNumber: 48,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Photos.js",
-                        lineNumber: 58,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, undefined),
                     selectedPhoto && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27358,30 +27353,30 @@ const Photos = ()=>{
                             photos: photos
                         }, void 0, false, {
                             fileName: "src/Components/Photos.js",
-                            lineNumber: 78,
+                            lineNumber: 66,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Photos.js",
-                        lineNumber: 77,
+                        lineNumber: 65,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Photos.js",
-                lineNumber: 57,
+                lineNumber: 45,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Photos.js",
-        lineNumber: 32,
+        lineNumber: 26,
         columnNumber: 5
     }, undefined);
 };
 _s(Photos, "PmnYUB0qb6MaRTxHiU621i/sb6A=");
 _c = Photos;
-exports.default = Photos; // "@material-ui/core": "^4.12.4",
+exports.default = Photos;
 var _c;
 $RefreshReg$(_c, "Photos");
 
@@ -31554,13 +31549,13 @@ exports.default = HttpStatusCode;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4sy6L":[function(require,module,exports) {
 module.exports["active"] = `EMnl1G_active`;
-module.exports["mainpage"] = `EMnl1G_mainpage`;
-module.exports["tab-container"] = `EMnl1G_tab-container`;
-module.exports["photo"] = `EMnl1G_photo`;
-module.exports["tab"] = `EMnl1G_tab`;
-module.exports["addedphoto"] = `EMnl1G_addedphoto`;
 module.exports["recentpage"] = `EMnl1G_recentpage`;
+module.exports["addedphoto"] = `EMnl1G_addedphoto`;
+module.exports["mainpage"] = `EMnl1G_mainpage`;
 module.exports["heading"] = `EMnl1G_heading`;
+module.exports["photo"] = `EMnl1G_photo`;
+module.exports["tab-container"] = `EMnl1G_tab-container`;
+module.exports["tab"] = `EMnl1G_tab`;
 
 },{}],"6O1Vn":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bee5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -31578,7 +31573,6 @@ var _favoriteBorder = require("@mui/icons-material/FavoriteBorder");
 var _favoriteBorderDefault = parcelHelpers.interopDefault(_favoriteBorder);
 var _favorite = require("@mui/icons-material/Favorite");
 var _favoriteDefault = parcelHelpers.interopDefault(_favorite);
-var _s = $RefreshSig$();
 function formatDate(date) {
     return new Date(date).toLocaleDateString("en-US", {
         month: "short",
@@ -31587,8 +31581,6 @@ function formatDate(date) {
     });
 }
 const PhotoDetails = ({ photo , photos  })=>{
-    _s();
-    const [fav, setFav] = (0, _react.useState)(true);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         style: {
             backgroundColor: "	#ffffff",
@@ -31605,7 +31597,7 @@ const PhotoDetails = ({ photo , photos  })=>{
                 }
             }, void 0, false, {
                 fileName: "src/Components/PhotoDetails.js",
-                lineNumber: 17,
+                lineNumber: 14,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -31619,7 +31611,7 @@ const PhotoDetails = ({ photo , photos  })=>{
                 children: photo.filename
             }, void 0, false, {
                 fileName: "src/Components/PhotoDetails.js",
-                lineNumber: 22,
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -31636,7 +31628,7 @@ const PhotoDetails = ({ photo , photos  })=>{
                 ]
             }, void 0, true, {
                 fileName: "src/Components/PhotoDetails.js",
-                lineNumber: 23,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -31652,7 +31644,7 @@ const PhotoDetails = ({ photo , photos  })=>{
                         }
                     }, void 0, false, {
                         fileName: "src/Components/PhotoDetails.js",
-                        lineNumber: 35,
+                        lineNumber: 32,
                         columnNumber: 30
                     }, undefined),
                     photo.favorited && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _favoriteDefault.default), {
@@ -31662,13 +31654,13 @@ const PhotoDetails = ({ photo , photos  })=>{
                         }
                     }, void 0, false, {
                         fileName: "src/Components/PhotoDetails.js",
-                        lineNumber: 36,
+                        lineNumber: 33,
                         columnNumber: 29
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/PhotoDetails.js",
-                lineNumber: 33,
+                lineNumber: 30,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -31681,7 +31673,7 @@ const PhotoDetails = ({ photo , photos  })=>{
                 children: "Information"
             }, void 0, false, {
                 fileName: "src/Components/PhotoDetails.js",
-                lineNumber: 38,
+                lineNumber: 35,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31702,7 +31694,7 @@ const PhotoDetails = ({ photo , photos  })=>{
                         children: "Uploaded By"
                     }, void 0, false, {
                         fileName: "src/Components/PhotoDetails.js",
-                        lineNumber: 54,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -31715,18 +31707,18 @@ const PhotoDetails = ({ photo , photos  })=>{
                         children: photo.uploadedBy
                     }, void 0, false, {
                         fileName: "src/Components/PhotoDetails.js",
-                        lineNumber: 63,
+                        lineNumber: 60,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/PhotoDetails.js",
-                lineNumber: 47,
+                lineNumber: 44,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                 fileName: "src/Components/PhotoDetails.js",
-                lineNumber: 72,
+                lineNumber: 69,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31747,7 +31739,7 @@ const PhotoDetails = ({ photo , photos  })=>{
                         children: "Created"
                     }, void 0, false, {
                         fileName: "src/Components/PhotoDetails.js",
-                        lineNumber: 80,
+                        lineNumber: 77,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -31759,18 +31751,18 @@ const PhotoDetails = ({ photo , photos  })=>{
                         children: formatDate(photo.createdAt)
                     }, void 0, false, {
                         fileName: "src/Components/PhotoDetails.js",
-                        lineNumber: 89,
+                        lineNumber: 86,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/PhotoDetails.js",
-                lineNumber: 73,
+                lineNumber: 70,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                 fileName: "src/Components/PhotoDetails.js",
-                lineNumber: 93,
+                lineNumber: 90,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31791,7 +31783,7 @@ const PhotoDetails = ({ photo , photos  })=>{
                         children: "Last modified"
                     }, void 0, false, {
                         fileName: "src/Components/PhotoDetails.js",
-                        lineNumber: 101,
+                        lineNumber: 98,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -31803,18 +31795,18 @@ const PhotoDetails = ({ photo , photos  })=>{
                         children: formatDate(photo.updatedAt)
                     }, void 0, false, {
                         fileName: "src/Components/PhotoDetails.js",
-                        lineNumber: 110,
+                        lineNumber: 107,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/PhotoDetails.js",
-                lineNumber: 94,
+                lineNumber: 91,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                 fileName: "src/Components/PhotoDetails.js",
-                lineNumber: 114,
+                lineNumber: 111,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31835,7 +31827,7 @@ const PhotoDetails = ({ photo , photos  })=>{
                         children: "Dimensions"
                     }, void 0, false, {
                         fileName: "src/Components/PhotoDetails.js",
-                        lineNumber: 122,
+                        lineNumber: 119,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -31851,18 +31843,18 @@ const PhotoDetails = ({ photo , photos  })=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/PhotoDetails.js",
-                        lineNumber: 131,
+                        lineNumber: 128,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/PhotoDetails.js",
-                lineNumber: 115,
+                lineNumber: 112,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                 fileName: "src/Components/PhotoDetails.js",
-                lineNumber: 135,
+                lineNumber: 132,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31883,7 +31875,7 @@ const PhotoDetails = ({ photo , photos  })=>{
                         children: "Resolution"
                     }, void 0, false, {
                         fileName: "src/Components/PhotoDetails.js",
-                        lineNumber: 143,
+                        lineNumber: 140,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -31899,25 +31891,25 @@ const PhotoDetails = ({ photo , photos  })=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/PhotoDetails.js",
-                        lineNumber: 152,
+                        lineNumber: 149,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/PhotoDetails.js",
-                lineNumber: 136,
+                lineNumber: 133,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                 fileName: "src/Components/PhotoDetails.js",
-                lineNumber: 156,
+                lineNumber: 153,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "Description"
             }, void 0, false, {
                 fileName: "src/Components/PhotoDetails.js",
-                lineNumber: 157,
+                lineNumber: 154,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -31929,7 +31921,7 @@ const PhotoDetails = ({ photo , photos  })=>{
                 children: photo.description
             }, void 0, false, {
                 fileName: "src/Components/PhotoDetails.js",
-                lineNumber: 158,
+                lineNumber: 155,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -31949,17 +31941,16 @@ const PhotoDetails = ({ photo , photos  })=>{
                 children: "Delete"
             }, void 0, false, {
                 fileName: "src/Components/PhotoDetails.js",
-                lineNumber: 159,
+                lineNumber: 156,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/PhotoDetails.js",
-        lineNumber: 16,
+        lineNumber: 13,
         columnNumber: 5
     }, undefined);
 };
-_s(PhotoDetails, "EwN8KeySMKPgN/u1OFgRbwEVXLM=");
 _c = PhotoDetails;
 exports.default = PhotoDetails;
 var _c;

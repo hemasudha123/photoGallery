@@ -8,10 +8,7 @@ function formatDate(date) {
     year: "numeric"
   })
 }
-
 const PhotoDetails = ({ photo, photos }) => {
-  const [fav, setFav] = useState(true)
-
   return (
     <div style={{ backgroundColor: "	#ffffff", padding: "10px" }}>
       <img

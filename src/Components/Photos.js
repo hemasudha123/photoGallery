@@ -22,12 +22,6 @@ const Photos = () => {
   const handlePhotoClick = (photo) => {
     setSelectedPhoto(photo);
   };
-  const handleRecent = () => {
-    console.log('ddddd');
-  };
-  const handleFavorite = () => {
-    console.log('faaaa');
-  }
   return (
     <div style={{ backgroundColor: "#fdfdfc" }}>
       <h1 style={{ marginLeft: "50px" }}>Photos</h1>
@@ -39,6 +33,7 @@ const Photos = () => {
             indicatorColor="primary"
             style={{ width: "700px" }}
             onChange={(event, newValue) => {
+              console.log(event, newValue);
               setValue(newValue);
             }}
           >
@@ -46,17 +41,10 @@ const Photos = () => {
             <Tab label=" Favorited" />
           </Tabs>
         </Paper>
-        {/* <div className="tab-container">
-         <p className="tab-active" style={{marginLeft:"50px"}} onClick={handleRecent}>Recently Added</p>
-        </div>
-        <div>
-          <p className="tab" style={{marginLeft:"30px"}} onClick={handleFavorite}>Favorited</p>
-        </div> */}
-      </div>{console.log(value)}
-      {/* <hr width="70%" color="#686868" size="10px" align="left" /> */}
+      </div>
       <div style={{ display: "flex", flex: "1", justifyContent: "flex-start" }} className={classes.photo}>
         <ul style={{ flex: "9" }}>
-          {photos.filter(photo => (photo?.deleted ? false : (value === 1 ? photo.favorited : true)) ).map((photo) => (
+          {photos.filter(photo => (photo?.deleted ? false : (value === 1 ? photo.favorited : true))).map((photo) => (
             <li
               key={photo.filename}
               onClick={() => handlePhotoClick(photo)}
@@ -68,8 +56,8 @@ const Photos = () => {
                 height="180px"
                 style={{ borderRadius: "10px" }}
               />
-              <h3 style={{ fontFamily: "Roboto", fontSize: "10px" }}>{photo.filename}</h3>
-              <h3 style={{ fontFamily: "Roboto", fontSize: "10px" }}>{(photo.sizeInBytes / 1000000).toFixed(2)} MB</h3>
+              <h3 style={{ fontFamily: "Roboto", fontSize: "15px", fontWeight: "bold" }}>{photo.filename}</h3>
+              <h3 style={{ fontFamily: "Roboto", fontSize: "15px" }}>{(photo.sizeInBytes / 1000000).toFixed(2)} MB</h3>
             </li>
           ))}
         </ul>
@@ -84,4 +72,3 @@ const Photos = () => {
 };
 
 export default Photos;
-// "@material-ui/core": "^4.12.4",
