@@ -1,0 +1,54 @@
+.photo ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.mainpage{
+  display: flex;
+  justify-content: space-between;
+  margin:12px;
+}
+.heading{
+  font-family: "roboto";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+}
+.recentpage{
+  display: flex;
+  flex-direction: row;
+}
+.addedphoto{
+  margin:20px;
+}
+.tab-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.tab{
+  background-color: #ddd;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab.active {
+  background-color: #bbb;
+}
+
+.tab:hover {
+  background-color: #ccc;
+}
+
+.tab:active {
+  background-color: #aaa;
+}
+
+.tab:focus {
+  outline: none;
+  box-shadow: 0 0 2px 2px #999;
+}

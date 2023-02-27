@@ -1,0 +1,61 @@
+.EMnl1G_photo ul {
+  flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+}
+
+.EMnl1G_mainpage {
+  justify-content: space-between;
+  margin: 12px;
+  display: flex;
+}
+
+.EMnl1G_heading {
+  font-family: roboto;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.EMnl1G_recentpage {
+  flex-direction: row;
+  display: flex;
+}
+
+.EMnl1G_addedphoto {
+  margin: 20px;
+}
+
+.EMnl1G_tab-container {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.EMnl1G_tab {
+  cursor: pointer;
+  background-color: #ddd;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  transition: background-color .3s;
+}
+
+.EMnl1G_tab.EMnl1G_active {
+  background-color: #bbb;
+}
+
+.EMnl1G_tab:hover {
+  background-color: #ccc;
+}
+
+.EMnl1G_tab:active {
+  background-color: #aaa;
+}
+
+.EMnl1G_tab:focus {
+  outline: none;
+  box-shadow: 0 0 2px 2px #999;
+}
+
+/*# sourceMappingURL=index.10ecffd0.css.map */
